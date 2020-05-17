@@ -138,33 +138,36 @@ May 05 21:08:06 ubuntu-4gb-hel1-1 sqlservr[3669]: [124B blob data]
 #### Sebelum masukan perintah di bawah silahkan masuk dulu sebagai root ```sudo su```
 ``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 curl https://packages.microsoft.com/config/ubuntu/19.10/prod.list > /etc/apt/sources.list.d/mssql-release.list
-sudo apt update 
-sudo ACCEPT_EULA=Y apt install mssql-tools unixodbc-dev 
+sudo apt-get update 
+sudo apt-get install mssql-tools
 ```
 #### Untuk Ubuntu 18.04
 #### 
 ``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
-sudo apt update 
-sudo sudo ACCEPT_EULA=Y apt install mssql-tools unixodbc-dev 
+sudo apt-get update 
+sudo apt-get install mssql-tools
 ```
 #### Untuk Ubuntu 16.04
 #### 
 ``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
-sudo apt update 
-sudo sudo ACCEPT_EULA=Y apt install mssql-tools unixodbc-dev
+sudo apt-get update 
+sudo apt-get install mssql-tools
 ```
 ### Langkah Ketujuh
 #### Konfigurasikan PATH untuk binari MS SQL
 #### ``` echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile ```
 #### Untuk membuat sqlcmd / bcp dapat diakses dari bash shell untuk sesi interaktif / non-login, modifikasi PATH dalam file ~ / .bashrc dengan perintah berikut:
-#### ``` echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
-#### source ~/.bashrc ```
+#### ``` echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc ```
+#### ``` source ~/.bashrc ```
 #### Terhubung keconsole MS SQL:
-#### ``` sqlcmd -S 127.0.0.1 -U SA 
+####
+``` 
+sqlcmd -S 127.0.0.1 -U SA 
 Password: 
-1> create database testDB; ```
+1> create database testDB; 
+```
 ### Selesai
 
 # Untuk Uninstallnya
