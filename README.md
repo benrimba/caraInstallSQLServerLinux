@@ -6,4 +6,6 @@
 ## Ikuti langkah-langkah di bawah ini untuk menginstal dan mengkonfigurasi server database MS SQL di Ubuntu 20.04 / 18.04 / 16.04:
 ## Langkah Pertama
 #### ```sudo apt-get update```
-#### ```sudo apt-get -y upgrade```
+#### ```sudo apt-get -y upgrade [optional]```
+## Langkah Kedua
+#### 
