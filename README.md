@@ -23,17 +23,17 @@
 #### ``` sudo apt install mssql-server ```
 #### Tekan tombol y untuk memulai instalasi Microsoft SQL Server 2019 pada Ubuntu 20.04 / 18.04 / 16.04.
 #### 
-``` ded packages: libc-dbg libcc1-0 gdbserver
+```ded packages: libc-dbg libcc1-0 gdbserver 
 The following NEW packages will be installed:
-  gawk gdb libbabeltrace1 libc++1 libc++1-10 libc++abi1-10 libdw1
-  libmpfr6 libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
-  libsasl2-modules libsasl2-modules-gssapi-mit libsigsegv2
-  libsss-nss-idmap0 mssql-server python-is-python2 python2
-  python2-minimal python2.7 python2.7-minimal
-0 upgraded, 21 newly installed, 0 to remove and 9 not upgraded.
-Need to get 235 MB of archives.
-After this operation, 1,101 MB of additional disk space will be used.
-Do you want to continue? [Y/n] y ```
+gawk gdb libbabeltrace1 libc++1 libc++1-10 libc++abi1-10 libdw1
+libmpfr6 libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
+libsasl2-modules libsasl2-modules-gssapi-mit libsigsegv2
+libsss-nss-idmap0 mssql-server python-is-python2 python2
+python2-minimal python2.7 python2.7-minimal
+0 upgraded, 21 newly installed, 0 to remove and 9 not upgraded
+Need to get 235 MB of archives
+After this operation, 1,101 MB of additional disk space will be used
+Do you want to continue? [Y/n] y```
 
 ### Outputnya seperti di bawah ini:
 #### ``` Unpacking mssql-server (15.0.4033.1-2) ...
