@@ -14,7 +14,7 @@
 #### Langkah 3: Tambahkan repositori Ubuntu Microsoft SQL Server 2019:
 #### Tambahkan repositori APT Microsoft SQL Server 2019 ke sistem Ubuntu 20.04 / 18.04 / 16.04 Anda.
 #### Untuk Ubuntu 18.04 /Ubuntu 20.04
-#### ```sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/20.04/mssql-server-2019.list)"```
+#### ```sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/18.04/mssql-server-2019.list)"```
 #### Untuk Ubuntu 16. 04
 #### ``` sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2019.list)"```
 ## Langkah Keempat
