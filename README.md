@@ -107,9 +107,10 @@ ForceFlush feature is enabled for log durability.
 Created symlink /etc/systemd/system/multi-user.target.wants/mssql-server.service → /lib/systemd/system/mssql-server.service.
 Setup has completed successfully. SQL Server is now starting.
 ```
-#### MS SQL harus dimulai.
-#### ```systemctl status mssql-server --no-pager ```
-#### ``` ● mssql-server.service - Microsoft SQL Server Database Engine
+#### Untuk mengcek MS SQL sudah aktif atau belum.
+#### 
+```systemctl status mssql-server --no-pager 
+● mssql-server.service - Microsoft SQL Server Database Engine
      Loaded: loaded (/lib/systemd/system/mssql-server.service; enabled; vendor preset: enabled)
      Active: active (running) since Tue 2020-05-05 21:08:00 CEST; 26s ago
        Docs: https://docs.microsoft.com/en-us/sql/linux
