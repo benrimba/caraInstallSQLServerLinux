@@ -109,7 +109,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/mssql-server.service
 Setup has completed successfully. SQL Server is now starting.
 ```
 #### MS SQL harus dimulai.
-#### ```systemctl status mssql-server.service ```
+#### ```systemctl status mssql-server --no-pager ```
 #### ``` ● mssql-server.service - Microsoft SQL Server Database Engine
      Loaded: loaded (/lib/systemd/system/mssql-server.service; enabled; vendor preset: enabled)
      Active: active (running) since Tue 2020-05-05 21:08:00 CEST; 26s ago
@@ -132,7 +132,7 @@ May 05 21:08:06 ubuntu-4gb-hel1-1 sqlservr[3669]: [100B blob data]
 May 05 21:08:06 ubuntu-4gb-hel1-1 sqlservr[3669]: [71B blob data]
 May 05 21:08:06 ubuntu-4gb-hel1-1 sqlservr[3669]: [124B blob data]
 `
-### ``` Langkah Keenam 
+###  Langkah Keenam 
 #### Install MS SQL tools and unixODBC plugin
 #### Untuk Ubuntu 20.04:
 #### ``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
@@ -160,3 +160,13 @@ source ~/.bashrc ```
 Password: 
 1> create database testDB; ```
 ### Selesai
+
+# Untuk Uninstallnya
+## ``` sudo apt-get remove mssql-sever ```
+## ``` sudo system status mssql-server ```
+# Untuk Menghapus folder MssQl
+## Masuk sebagai root
+## ``` sudo su ```
+## ``` sudo rm -rf /var/opt/mssql ```
+## Untuk mengecek folder MssQl sudah terhapus atau belum
+## ```sudo ls -lrt /var/opt/mssql```
