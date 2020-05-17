@@ -22,8 +22,8 @@
 #### ``` sudo apt update ```
 #### ``` sudo apt install mssql-server ```
 #### Tekan tombol y untuk memulai instalasi Microsoft SQL Server 2019 pada Ubuntu 20.04 / 18.04 / 16.04.
-#### ``` ded packages: 
-  libc-dbg libcc1-0 gdbserver
+#### 
+``` ded packages: libc-dbg libcc1-0 gdbserver
 The following NEW packages will be installed:
   gawk gdb libbabeltrace1 libc++1 libc++1-10 libc++abi1-10 libdw1
   libmpfr6 libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
@@ -36,8 +36,7 @@ After this operation, 1,101 MB of additional disk space will be used.
 Do you want to continue? [Y/n] y ```
 
 ### Outputnya seperti di bawah ini:
-#### ```
-Unpacking mssql-server (15.0.4033.1-2) ...
+#### ``` Unpacking mssql-server (15.0.4033.1-2) ...
 Setting up libdw1:amd64 (0.176-1.1build1) ...
 Setting up gawk (1:5.0.1+dfsg-1) ...
 Setting up libsasl2-modules:amd64 (2.1.27+dfsg-2) ...
@@ -66,11 +65,11 @@ to complete the setup of Microsoft SQL Server
 +--------------------------------------------------------------+
 Processing triggers for man-db (2.9.1-1) ...
 Processing triggers for mime-support (3.64ubuntu1) ...
-Processing triggers for libc-bin (2.31-0ubuntu9) ...
-``
-### ```Langkah Kelima 
+Processing triggers for libc-bin (2.31-0ubuntu9) ... ```
+
+### Langkah Kelima 
 #### Ketika instalasi selesai, lanjutkan untuk mengatur kata sandi pengguna root dengan menjalankan pengaturan awal / opt / mssql / bin / mssql-conf setup
-### ``` sudo /opt/mssql/bin/mssql-conf setup
+### ``` sudo /opt/mssql/bin/mssql-conf setup```
 Choose an edition of SQL Server:
   1) Evaluation (free, no production use rights, 180-day limit)
   ```2) Developer (free, no production use rights)
