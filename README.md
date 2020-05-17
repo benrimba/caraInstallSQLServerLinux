@@ -22,8 +22,7 @@
 #### ``` sudo apt update ```
 #### ``` sudo apt install mssql-server ```
 #### Tekan tombol y untuk memulai instalasi Microsoft SQL Server 2019 pada Ubuntu 20.04 / 18.04 / 16.04.
-#### 
-```ded packages: libc-dbg libcc1-0 gdbserver 
+```py ded packages: libc-dbg libcc1-0 gdbserver 
 The following NEW packages will be installed:
 gawk gdb libbabeltrace1 libc++1 libc++1-10 libc++abi1-10 libdw1
 libmpfr6 libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
