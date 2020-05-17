@@ -108,8 +108,8 @@ Created symlink /etc/systemd/system/multi-user.target.wants/mssql-server.service
 Setup has completed successfully. SQL Server is now starting.
 ```
 #### Untuk mengcek MS SQL sudah aktif atau belum.
-#### 
-```systemctl status mssql-server --no-pager 
+#### ``` systemctl status mssql-server --no-pager ```
+```
 ● mssql-server.service - Microsoft SQL Server Database Engine
      Loaded: loaded (/lib/systemd/system/mssql-server.service; enabled; vendor preset: enabled)
      Active: active (running) since Tue 2020-05-05 21:08:00 CEST; 26s ago
