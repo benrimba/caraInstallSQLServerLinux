@@ -1,4 +1,4 @@
-# Install MS SQL Server on Ubuntu 20.04/18.04/16.04 LTS
+# Install / Uninstall MS SQL Server on Ubuntu 20.04/18.04/16.04 LTS
 ## System Requirements
 #### 1. Minimum memory of 2 GB
 #### 2. Prosesor CPU dengan kecepatan minimum 1,4 GHz. Tetapi yang direkomendasikan adalah> = 2 GHz
@@ -72,7 +72,7 @@ Processing triggers for libc-bin (2.31-0ubuntu9) ...
 ### ``` sudo /opt/mssql/bin/mssql-conf setup```
 ``` Choose an edition of SQL Server:
   1) Evaluation (free, no production use rights, 180-day limit)
-  ```2) Developer (free, no production use rights)
+  2) Developer (free, no production use rights)
   3) Express (free)
   4) Web (PAID)
   5) Standard (PAID)
