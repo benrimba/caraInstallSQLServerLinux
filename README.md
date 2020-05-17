@@ -22,7 +22,7 @@
 #### ``` sudo apt update ```
 #### ``` sudo apt install mssql-server ```
 #### Tekan tombol y untuk memulai instalasi Microsoft SQL Server 2019 pada Ubuntu 20.04 / 18.04 / 16.04.
-```py ded packages: libc-dbg libcc1-0 gdbserver 
+``` ded packages: libc-dbg libcc1-0 gdbserver 
 The following NEW packages will be installed:
 gawk gdb libbabeltrace1 libc++1 libc++1-10 libc++abi1-10 libdw1
 libmpfr6 libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
@@ -32,10 +32,11 @@ python2-minimal python2.7 python2.7-minimal
 0 upgraded, 21 newly installed, 0 to remove and 9 not upgraded
 Need to get 235 MB of archives
 After this operation, 1,101 MB of additional disk space will be used
-Do you want to continue? [Y/n] y```
-
+Do you want to continue? [Y/n] y
+```
 ### Outputnya seperti di bawah ini:
-#### ``` Unpacking mssql-server (15.0.4033.1-2) ...
+#### 
+``` Unpacking mssql-server (15.0.4033.1-2) ...
 Setting up libdw1:amd64 (0.176-1.1build1) ...
 Setting up gawk (1:5.0.1+dfsg-1) ...
 Setting up libsasl2-modules:amd64 (2.1.27+dfsg-2) ...
@@ -64,12 +65,12 @@ to complete the setup of Microsoft SQL Server
 +--------------------------------------------------------------+
 Processing triggers for man-db (2.9.1-1) ...
 Processing triggers for mime-support (3.64ubuntu1) ...
-Processing triggers for libc-bin (2.31-0ubuntu9) ... ```
-
+Processing triggers for libc-bin (2.31-0ubuntu9) ... 
+```
 ### Langkah Kelima 
 #### Ketika instalasi selesai, lanjutkan untuk mengatur kata sandi pengguna root dengan menjalankan pengaturan awal / opt / mssql / bin / mssql-conf setup
 ### ``` sudo /opt/mssql/bin/mssql-conf setup```
-Choose an edition of SQL Server:
+``` Choose an edition of SQL Server:
   1) Evaluation (free, no production use rights, 180-day limit)
   ```2) Developer (free, no production use rights)
   3) Express (free)
@@ -130,30 +131,36 @@ May 05 21:08:06 ubuntu-4gb-hel1-1 sqlservr[3669]: [96B blob data]
 May 05 21:08:06 ubuntu-4gb-hel1-1 sqlservr[3669]: [100B blob data]
 May 05 21:08:06 ubuntu-4gb-hel1-1 sqlservr[3669]: [71B blob data]
 May 05 21:08:06 ubuntu-4gb-hel1-1 sqlservr[3669]: [124B blob data]
-`
+```
 ###  Langkah Keenam 
 #### Install MS SQL tools and unixODBC plugin
 #### Untuk Ubuntu 20.04:
-#### ``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+#### 
+``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 curl https://packages.microsoft.com/config/ubuntu/19.10/prod.list > /etc/apt/sources.list.d/mssql-release.list
 sudo apt update 
-sudo ACCEPT_EULA=Y apt install mssql-tools unixodbc-dev ```
+sudo ACCEPT_EULA=Y apt install mssql-tools unixodbc-dev 
+```
 #### Untuk Ubuntu 18.04
-#### ``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+#### 
+``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
 sudo apt update 
-sudo sudo ACCEPT_EULA=Y apt install mssql-tools unixodbc-dev ```
+sudo sudo ACCEPT_EULA=Y apt install mssql-tools unixodbc-dev 
+```
 #### Untuk Ubuntu 16.04
-#### ``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+#### 
+``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
 sudo apt update 
-sudo sudo ACCEPT_EULA=Y apt install mssql-tools unixodbc-dev```
+sudo sudo ACCEPT_EULA=Y apt install mssql-tools unixodbc-dev
+```
 ### Langkah Ketujuh
 #### Konfigurasikan PATH untuk binari MS SQL
 #### ``` echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile ```
 #### Untuk membuat sqlcmd / bcp dapat diakses dari bash shell untuk sesi interaktif / non-login, modifikasi PATH dalam file ~ / .bashrc dengan perintah berikut:
 #### ``` echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
-source ~/.bashrc ```
+#### source ~/.bashrc ```
 #### Terhubung keconsole MS SQL:
 #### ``` sqlcmd -S 127.0.0.1 -U SA 
 Password: 
