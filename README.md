@@ -172,8 +172,8 @@ Password:
 
 # Untuk Uninstallnya
 ## langkah pertama kita masuk sebagai Root ```sudo su ```
-## langkah selanjutnya kita masuk ke direktori sqlserver ```cd /var/opt/mssql/data```
-## berikutnya kita cek list sqlserver dengan perintah ```ls -lrt```
+## #Access /var/opt/mssql ```sudo ls -lrt /var/opt/mssql```
+## #Get inside /var/opt/mssql/data ```sudo ls -lrt /var/opt/mssql/data```
 ### berikutnya kita stop dulu service sqlservernya dengan perintah ``` systemctl stop mssql-server --no-pager```
 ## ``` sudo apt remove mssql-sever ```
 ## ``` sudo system status mssql-server ```
