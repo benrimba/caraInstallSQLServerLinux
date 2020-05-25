@@ -133,7 +133,8 @@ May 05 21:08:06 ubuntu-4gb-hel1-1 sqlservr[3669]: [71B blob data]
 May 05 21:08:06 ubuntu-4gb-hel1-1 sqlservr[3669]: [124B blob data]
 ```
 ###  Langkah Keenam 
-#### Install MS SQL tools and unixODBC plugin
+#### Install MS SQL tools and unixODBC plugin 
+###### ODBC (Open Database Connectivity) adalah standar protokol yang menjadi penghubung antara komputer basis data
 #### Untuk Ubuntu 20.04:
 #### Sebelum masukan perintah di bawah silahkan masuk dulu sebagai root ```sudo su```
 ``` curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
