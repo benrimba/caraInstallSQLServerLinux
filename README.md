@@ -5,22 +5,22 @@
 #### 3. SQL Server requires a minimum of 10 GB of available hard-disk space
 ## Ikuti langkah-langkah di bawah ini untuk menginstal dan mengkonfigurasi server database MS SQL di Ubuntu 20.04 / 18.04 / 16.04:
 ## Langkah Pertama
-#### ```sudo apt-get update```
-#### ```sudo apt-get -y upgrade [optional]```
+###### ```sudo apt-get update```
+###### ```sudo apt-get -y upgrade [optional]```
 ## Langkah Kedua
 #### Tambahkan kunci GPG untuk sistem untuk mempercayai paket repositori MS SQL apt:
-#### ```sudo wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -```
+###### ```sudo wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -```
 ## Langkah Ketiga
 #### Langkah 3: Tambahkan repositori Ubuntu Microsoft SQL Server 2019:
 #### Tambahkan repositori APT Microsoft SQL Server 2019 ke sistem Ubuntu 20.04 / 18.04 / 16.04 Anda.
 #### Untuk Ubuntu 18.04 /Ubuntu 20.04
-#### ```sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/18.04/mssql-server-2019.list)"```
+###### ```sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/18.04/mssql-server-2019.list)"```
 #### Untuk Ubuntu 16. 04
-#### ``` sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2019.list)"```
+###### ``` sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2019.list)"```
 ## Langkah Keempat
 #### Install MS SQL Server 2019 on Ubuntu 20.04/18.04/16.04 LTS
-#### ``` sudo apt update ```
-#### ``` sudo apt install mssql-server ```
+###### ``` sudo apt update ```
+###### ``` sudo apt install mssql-server ```
 #### Tekan tombol y untuk memulai instalasi Microsoft SQL Server 2019 pada Ubuntu 20.04 / 18.04 / 16.04.
 ``` ded packages: libc-dbg libcc1-0 gdbserver 
 The following NEW packages will be installed:
@@ -69,7 +69,7 @@ Processing triggers for libc-bin (2.31-0ubuntu9) ...
 ```
 ### Langkah Kelima 
 #### Ketika instalasi selesai, lanjutkan untuk mengatur kata sandi pengguna root dengan menjalankan pengaturan awal / opt / mssql / bin / mssql-conf setup
-### ``` sudo /opt/mssql/bin/mssql-conf setup```
+###### ``` sudo /opt/mssql/bin/mssql-conf setup```
 ``` Choose an edition of SQL Server:
   1) Evaluation (free, no production use rights, 180-day limit)
   2) Developer (free, no production use rights)
@@ -108,7 +108,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/mssql-server.service
 Setup has completed successfully. SQL Server is now starting.
 ```
 #### Untuk mengcek MS SQL sudah aktif atau belum.
-#### ``` systemctl status mssql-server --no-pager ```
+###### ``` systemctl status mssql-server --no-pager ```
 ```
 ● mssql-server.service - Microsoft SQL Server Database Engine
      Loaded: loaded (/lib/systemd/system/mssql-server.service; enabled; vendor preset: enabled)
@@ -157,10 +157,10 @@ sudo apt-get install mssql-tools
 ```
 ### Langkah Ketujuh
 #### Konfigurasikan PATH untuk binari MS SQL
-#### ``` echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile ```
+###### ``` echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile ```
 #### Untuk membuat sqlcmd / bcp dapat diakses dari bash shell untuk sesi interaktif / non-login, modifikasi PATH dalam file ~ / .bashrc dengan perintah berikut:
-#### ``` echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc ```
-#### ``` source ~/.bashrc ```
+###### ``` echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc ```
+###### ``` source ~/.bashrc ```
 #### Terhubung keconsole MS SQL:
 ####
 ``` 
@@ -175,11 +175,11 @@ Password:
 ## #Access /var/opt/mssql ```sudo ls -lrt /var/opt/mssql```
 ## #Get inside /var/opt/mssql/data ```sudo ls -lrt /var/opt/mssql/data```
 ### berikutnya kita stop dulu service sqlservernya dengan perintah ``` systemctl stop mssql-server --no-pager```
-## ``` sudo apt remove mssql-sever ```
-## ``` sudo system status mssql-server ```
+###### ``` sudo apt remove mssql-sever ```
+###### ``` sudo system status mssql-server ```
 # Untuk Menghapus folder MssQl
 ## Masuk sebagai root
-## ``` sudo su ```
-## ``` sudo rm -rf /var/opt/mssql ```
+###### ``` sudo su ```
+###### ``` sudo rm -rf /var/opt/mssql ```
 ## Untuk mengecek folder MssQl sudah terhapus atau belum
-## ```sudo ls -lrt /var/opt/mssql```
+###### ```sudo ls -lrt /var/opt/mssql```
