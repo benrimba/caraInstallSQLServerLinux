@@ -171,7 +171,11 @@ Password:
 ### Selesai
 
 # Untuk Uninstallnya
-## ``` sudo apt-get remove mssql-sever ```
+## langkah pertama kita masuk sebagai Root ```sudo su ```
+## langkah selanjutnya kita masuk ke direktori sqlserver ```cd /var/opt/mssql/data```
+## berikutnya kita cek list sqlserver dengan perintah ```ls -lrt```
+### berikutnya kita stop dulu service sqlservernya dengan perintah ``` systemctl stop mssql-server --no-pager```
+## ``` sudo apt remove mssql-sever ```
 ## ``` sudo system status mssql-server ```
 # Untuk Menghapus folder MssQl
 ## Masuk sebagai root
